@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renounce Citizenship - ToadVille Bay INM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-globe-americas"></i> ToadVille Bay INM
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Back to Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">
+                        <h2 class="mb-0">Application to Renounce Citizenship</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Important Notice:</strong> Renouncing citizenship is a serious and irrevocable decision. Please carefully consider the consequences before proceeding.
+                        </div>
+
+                        <form id="renounceForm">
+                            <h4 class="mb-4">Personal Information</h4>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Place of Birth</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">ToadVille Bay Citizenship Number</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Alternative Citizenship</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Do you have another citizenship?</label>
+                                <select class="form-select" required>
+                                    <option value="">Select answer</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                    <option value="pending">Pending Application</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">If yes, specify country</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Reason for Renunciation</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Primary Reason</label>
+                                <select class="form-select" required>
+                                    <option value="">Select reason</option>
+                                    <option value="dual-citizenship">Acquiring another citizenship</option>
+                                    <option value="personal">Personal choice</option>
+                                    <option value="legal">Legal requirement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Detailed Explanation</label>
+                                <textarea class="form-control" rows="4" required></textarea>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Legal Obligations</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Do you have any pending legal proceedings in ToadVille Bay?</label>
+                                <select class="form-select" required>
+                                    <option value="">Select answer</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Do you have any outstanding tax obligations?</label>
+                                <select class="form-select" required>
+                                    <option value="">Select answer</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Required Documents</h4>
+                            <div class="mb-3">
+                                <label class="form-label">ToadVille Bay Passport</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.jpeg,.png" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Citizenship Certificate</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.jpeg,.png" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Proof of Other Citizenship (if applicable)</label>
+                                <input type="file" class="form-control" accept=".pdf">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Tax Clearance Certificate</label>
+                                <input type="file" class="form-control" accept=".pdf" required>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Declarations and Acknowledgments</h4>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" required>
+                                    <label class="form-check-label text-danger">
+                                        I understand that renouncing my citizenship is an irrevocable action
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" required>
+                                    <label class="form-check-label">
+                                        I understand I will lose all rights and privileges of ToadVille Bay citizenship
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" required>
+                                    <label class="form-check-label">
+                                        I confirm I am making this decision of my own free will
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" required>
+                                    <label class="form-check-label">
+                                        I declare all information provided is true and accurate
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-danger btn-lg">Submit Renunciation Application</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2025 ToadVille Bay Institute National Migration. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

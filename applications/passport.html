@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application - ToadVille Bay INM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-globe-americas"></i> ToadVille Bay INM
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Back to Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="mb-0">Passport Application</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="passportForm">
+                            <h4 class="mb-4">Application Type</h4>
+                            <div class="mb-3">
+                                <select class="form-select" required>
+                                    <option value="">Select application type</option>
+                                    <option value="new">New Passport</option>
+                                    <option value="renewal">Passport Renewal</option>
+                                    <option value="replacement">Lost/Stolen Passport Replacement</option>
+                                    <option value="emergency">Emergency Passport</option>
+                                </select>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Personal Information</h4>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Place of Birth</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Gender</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Citizenship Number</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Contact Information</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Current Address</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Emergency Contact</h4>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Relationship</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contact Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Passport Details</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Passport Type</label>
+                                <select class="form-select" required>
+                                    <option value="">Select passport type</option>
+                                    <option value="regular">Regular (5 years)</option>
+                                    <option value="extended">Extended (10 years)</option>
+                                    <option value="diplomatic">Diplomatic</option>
+                                    <option value="emergency">Emergency (1 year)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Previous Passport Number (if applicable)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Previous Passport Expiry Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Required Documents</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Passport Photo (2x2 inches)</label>
+                                <input type="file" class="form-control" accept=".jpg,.jpeg,.png" required>
+                                <small class="text-muted">Must meet official passport photo requirements</small>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Birth Certificate</label>
+                                <input type="file" class="form-control" accept=".pdf" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Citizenship Certificate</label>
+                                <input type="file" class="form-control" accept=".pdf" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Previous Passport (if renewal)</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.jpeg,.png">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Police Report (if lost/stolen)</label>
+                                <input type="file" class="form-control" accept=".pdf">
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Processing Options</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Processing Speed</label>
+                                <select class="form-select" required>
+                                    <option value="">Select processing speed</option>
+                                    <option value="standard">Standard (4-6 weeks) - No additional fee</option>
+                                    <option value="expedited">Expedited (2-3 weeks) - Additional $100</option>
+                                    <option value="urgent">Urgent (5-7 days) - Additional $200</option>
+                                    <option value="same-day">Same Day - Additional $300</option>
+                                </select>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Declaration</h4>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" required>
+                                    <label class="form-check-label">
+                                        I declare that the information provided is true and accurate
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" required>
+                                    <label class="form-check-label">
+                                        I understand that providing false information may result in legal penalties
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit Passport Application</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2025 ToadVille Bay Institute National Migration. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

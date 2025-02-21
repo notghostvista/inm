@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporary Residency Application - ToadVille Bay INM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-globe-americas"></i> ToadVille Bay INM
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Back to Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="mb-0">Temporary Residency Application</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="tempResidencyForm">
+                            <h4 class="mb-4">Personal Information</h4>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Nationality</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Current Visa Type</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select visa type</option>
+                                        <option value="work">Work Visa</option>
+                                        <option value="student">Student Visa</option>
+                                        <option value="business">Business Visa</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Visa Expiry Date</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Contact Information</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Current Address in ToadVille Bay</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Employment/Study Status</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Current Status</label>
+                                <select class="form-select" required>
+                                    <option value="">Select status</option>
+                                    <option value="employed">Employed</option>
+                                    <option value="self-employed">Self-employed</option>
+                                    <option value="student">Student</option>
+                                    <option value="retired">Retired</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Employer/Institution Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Position/Program</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Financial Information</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Monthly Income (TBD)</label>
+                                <input type="number" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Additional Sources of Income</label>
+                                <textarea class="form-control" rows="2"></textarea>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Required Documents</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Valid Passport</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.jpeg,.png" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Current Visa</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.jpeg,.png" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Proof of Employment/Study</label>
+                                <input type="file" class="form-control" accept=".pdf" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Bank Statements (Last 6 months)</label>
+                                <input type="file" class="form-control" accept=".pdf" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Proof of Accommodation</label>
+                                <input type="file" class="form-control" accept=".pdf" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Health Insurance Certificate</label>
+                                <input type="file" class="form-control" accept=".pdf" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Police Clearance Certificate</label>
+                                <input type="file" class="form-control" accept=".pdf" required>
+                            </div>
+
+                            <h4 class="mb-4 mt-5">Declaration</h4>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" required>
+                                    <label class="form-check-label">
+                                        I declare that the information provided is true and accurate
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" required>
+                                    <label class="form-check-label">
+                                        I agree to the terms and conditions
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2025 ToadVille Bay Institute National Migration. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
